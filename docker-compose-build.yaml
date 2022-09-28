@@ -1,0 +1,18 @@
+version: "2"
+services:
+  reverseproxy:
+    build:
+      context: ./reverseproxy
+    image: reverseproxy
+  backend_user:
+    build:
+      context: ./backend-user
+    image: backend-user
+  backend_feed:
+    build:
+      context: ./backend-feed
+    image: backend-feed
+  frontend:
+    build:
+      context: ./udagram-frontend
+    image: udagram-frontend:local
