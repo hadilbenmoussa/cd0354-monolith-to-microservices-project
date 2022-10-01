@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  POSTGRES_HOST: database-1.cbjj02qmyeuu.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: data-udacity-project
+  AWS_REGION: us-east-1
+  AWS_PROFILE: default
+  JWT_SECRET: hello
+  URL: http://localhost:8100
